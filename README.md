@@ -76,7 +76,31 @@ Then paste it in your project folder.
 
 ## Usage
 
-[will be added later]
+To use the model
+
+```py
+import tensorflow as tf
+from tensorflow import keras
+from keras.models import load_model
+from keras.utils import load_img
+
+#load dependencies
+
+model = load_model('model.h5')
+# loading the model 
+
+def predict(image:str):
+    """
+    Predicts if an image is suv or supercar
+    Takes in image path as an argument
+    """
+    img = tf.expand_dims(tf.convert_to_tensor(load_img(image).resize((256, 256))), 0)
+    labels = ['supercars', 'suv']
+
+    return labels[int(model.predict(img, verbose=False)[0])]
+
+predict("path/to/your/image.file")
+```
 
 ## Contributing
 
