@@ -36,11 +36,43 @@ The image was splitted into Train-Test-Valid sets with `75:10:15` ratio
 
 ## Architecture
 
-[will be added later]
+This is a Convolution Based Model with sequential layers as follows:
+
+- Conv2D with `16` Filters and ReLU activation
+- MaxPool2D with pooling 2
+- Dropout with probablity of 20%
+- Conv2D with `32` Filters and ReLU activation
+- MaxPool2D with pooling 2
+- Dropout with probablity of 20%
+- Conv2D with `16` Filters and ReLU activation
+- MaxPool2D with pooling 2
+- Dropout with probablity of 20%
+- Flatten Layer
+- Dense Layer with `512` outputs and ReLU activation
+- Dense Layer with `64` outputs and ReLU activation
+- Dense Layer with 1 output and Sigmoid activation
+
+This Model used `Binary Cross Entropy` Loss to learn with an `adam` optimizer
 
 ## Installation
 
-[will be added later]
+### You first need to install Tensorflow
+
+#### To install TensorFlow using `pip`, run the following command:
+```sh
+pip install tensorflow
+```
+
+#### To install TensorFlow using `conda`, run the following command:
+```sh
+conda install tensorflow
+```
+
+### Then you have to download the model
+
+Download The model [here](https://github.com/ivanrj7j/Super-Cars-VS-SUVs/releases/download/1.0/model.h5)
+
+Then paste it in your project folder.
 
 ## Usage
 
