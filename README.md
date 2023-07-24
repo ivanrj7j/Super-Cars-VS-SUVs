@@ -102,6 +102,19 @@ def predict(image:str):
 predict("path/to/your/image.file")
 ```
 
+## Benchmarks
+
+The model performed really good with
+- `99% training accuracy` and 92% validation accuracy
+- `99% training precision` and 93% validation precision
+
+### Scores:
+- Recall: `95%`
+- Precison: `94%`
+- F1: `94%`
+
+(Scores were evaluated on test data)
+
 ## Contributing
 
 Contributions to this project are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
