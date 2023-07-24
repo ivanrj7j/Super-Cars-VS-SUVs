@@ -2,6 +2,10 @@
 
 This repository contains a machine learning project that classifies images of cars as either an SUV or a supercar.
 
+<img src='img.jpeg' alt="Image Generated using Bing Chat">
+
+*(image generated using bing chat)*
+
 ## Overview
 
 The project uses a convolutional neural network (CNN) to classify images of cars. The model is trained on a dataset of labeled car images and can accurately classify new images as either an SUV or a supercar.
