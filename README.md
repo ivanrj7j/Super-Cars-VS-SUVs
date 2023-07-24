@@ -17,7 +17,22 @@ The images were downloaded using [Download All Images](https://chrome.google.com
 
 ## Data Preprocessing
 
-[will be added later]
+The Data was First Augmented using Albumentations Pipeline.
+
+The below filters were applied to Images to augment them:
+- Horizontal Flip
+- Random Brightness Contrast
+- Random Rotate 90
+- Flip
+- RGB Shift
+- Hue Saturation Value
+- CLAHE
+- Random Gamma
+- Blur
+- To Gray
+- Image Compression
+
+The image was splitted into Train-Test-Valid sets with `75:10:15` ratio
 
 ## Architecture
 
